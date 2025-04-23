@@ -46,7 +46,7 @@ export default function About() {
                         className={Style.resume}
                         href="/Shagoto Bhakat CV Resume.pdf"
                         download="Shagoto Bhakat CV Resume.pdf">
-                        Download Resume
+                        Download CV Resume
                       </a>
                     </Button>
                   </div>
