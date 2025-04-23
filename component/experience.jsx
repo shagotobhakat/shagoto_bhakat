@@ -37,7 +37,7 @@ export default function Experience() {
                           <h2 className={Style.textThree}>
                             Company :{" "}
                             <span style={{ color: "#0788ff" }}>
-                              PERFECT Footwear Ltd.
+                              PERFECT Group.
                             </span>
                           </h2>
                           <p className={Style.textFour}>
