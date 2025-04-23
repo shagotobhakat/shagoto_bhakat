@@ -1,0 +1,21 @@
+.main {
+    background: rgb(7, 35, 59);
+    background: linear-gradient(90deg,
+            rgba(7, 35, 59, 1) 46%,
+            rgba(5, 12, 22, 1) 100%);
+    border-top: 1px solid #999999;
+}
+
+.icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.textTwo {
+    padding: 0px 10px;
+    font-size: 14px;
+    color: #fff;
+
+}

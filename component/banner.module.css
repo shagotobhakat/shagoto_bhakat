@@ -1,0 +1,145 @@
+.main {
+  background: rgb(7, 35, 59);
+  background: linear-gradient(90deg,
+      rgba(7, 35, 59, 1) 46%,
+      rgba(5, 12, 22, 1) 100%);
+  margin-top: 116px;
+}
+
+.left {
+  padding: 100px 20px;
+}
+
+.right {
+  text-align: center;
+  object-fit: cover;
+}
+
+.headOne {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.headTwo {
+  color: #0788ff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.body {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.icon {
+  border: 1px #fff solid;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-right: 15px;
+  text-align: center;
+  transition: all linear 0.3s;
+}
+
+.icon:hover {
+  background-color: #0788ff;
+}
+
+.card {
+  margin: 0 auto;
+  overflow: visible;
+  width: 330px;
+  height: 404px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.front,
+.back {
+  background: rgb(7, 35, 59);
+  background: linear-gradient(90deg,
+      rgba(7, 35, 59, 1) 46%,
+      rgba(5, 12, 22, 1) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg,
+      transparent,
+      #ff9966,
+      #ff9966,
+      #ff9966,
+      #ff9966,
+      transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.backContent {
+  padding: 10px;
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background: rgb(7, 35, 59);
+  background: linear-gradient(90deg,
+      rgba(7, 35, 59, 1) 46%,
+      rgba(5, 12, 22, 1) 100%);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 988px) {}
+
+@media (min-width: 575.98px) and (max-width: 767px) {}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .main {
+
+    margin-top: 85px;
+  }
+}

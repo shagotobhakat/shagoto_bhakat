@@ -1,0 +1,79 @@
+.main {
+  background: rgb(7, 35, 59);
+  background: linear-gradient(90deg,
+      rgba(7, 35, 59, 1) 46%,
+      rgba(5, 12, 22, 1) 100%);
+}
+
+.head {
+  display: inline-block;
+  background: #063e70;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.headOne {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.cardMain {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardPic {
+  object-fit: cover;
+  width: 100%;
+  transition: all linear 0.3s;
+}
+
+.cardText {
+  background: #000000e5;
+  padding: 20px 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+}
+
+.textOne {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+  transition: all linear 0.3s;
+}
+
+.textTwo {
+  font-size: 14px;
+  color: #fff;
+}
+
+.cardMain:hover .cardPic {
+  transform: scale(1.1);
+}
+
+.cardMain:hover .textOne {
+  color: #0788ff;
+}
+
+
+@media (min-width: 768px) and (max-width: 988px) {
+  .cardMain {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 575.98px) and (max-width: 767px) {}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .cardMain {
+    margin-bottom: 20px;
+  }
+}
