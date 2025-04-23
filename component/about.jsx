@@ -44,8 +44,8 @@ export default function About() {
                     <Button className={Style.cv}>
                       <a
                         className={Style.resume}
-                        href="/Shagoto Bhakat CV Resume.pdf"
-                        download="Shagoto Bhakat CV Resume.pdf">
+                        href="/Shagoto Bhakat CV resume.pdf"
+                        download="Shagoto Bhakat CV resume.pdf">
                         Download CV Resume
                       </a>
                     </Button>
