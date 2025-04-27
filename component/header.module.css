@@ -114,7 +114,9 @@
 
 @media (min-width: 396px) and (max-width: 595px) {
   .logoText {
-    visibility: hidden;
+    position: absolute;
+    top: 44px;
+    left: 70px;
   }
 
   .name {
@@ -147,7 +149,9 @@
   }
 
   .logoText {
-    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    left: 60px;
   }
 
   .name {
@@ -180,11 +184,13 @@
   }
 
   .logoText {
-    visibility: hidden;
+    position: absolute;
+    top: 27px;
+    left: 56px;
   }
 
   .name {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .navbar {

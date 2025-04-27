@@ -20,7 +20,38 @@ export default function Work() {
               </ScrollAnimation>
               <Row style={{ marginTop: "50px" }}>
                 <Col lg={12}>
-                  <Carousel cols={3} rows={1} gap={0} autoplay={3000} loop>
+                  <Carousel
+                    cols={3}
+                    rows={1}
+                    gap={0}
+                    autoplay={3000}
+                    loop
+                    responsiveLayout={[
+                      {
+                        breakpoint: 1200,
+                        cols: 3,
+                        autoplay: 2000,
+                        loop: true,
+                      },
+                      {
+                        breakpoint: 750,
+                        cols: 1,
+                        autoplay: 2000,
+                        loop: true,
+                      },
+                      {
+                        breakpoint: 575,
+                        cols: 1,
+                        autoplay: 2000,
+                        loop: true,
+                      },
+                      {
+                        breakpoint: 499,
+                        cols: 1,
+                        autoplay: 2000,
+                        loop: true,
+                      },
+                    ]}>
                     <Carousel.Item>
                       <div className={Style.book}>
                         <div className={Style.text}>

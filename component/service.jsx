@@ -17,7 +17,7 @@ export default function Service() {
                 <h1 className={Style.headOne}>My Services</h1>
               </ScrollAnimation>
               <Row style={{ marginTop: "30px" }}>
-                <Col lg={4}>
+                <Col lg={4} md={6}>
                   <div data-aos="fade-right" className={Style.cardMain}>
                     <Image
                       className={Style.cardPic}
@@ -34,7 +34,7 @@ export default function Service() {
                     </div>
                   </div>
                 </Col>
-                <Col lg={4}>
+                <Col lg={4} md={6}>
                   <div data-aos="fade-up" className={Style.cardMain}>
                     <Image
                       className={Style.cardPic}
@@ -51,7 +51,8 @@ export default function Service() {
                     </div>
                   </div>
                 </Col>
-                <Col lg={4}>
+                <Col md={3} className={Style.extraOne}></Col>
+                <Col lg={4} md={6}>
                   <div data-aos="fade-left" className={Style.cardMain}>
                     <Image
                       className={Style.cardPic}
@@ -69,6 +70,7 @@ export default function Service() {
                     </div>
                   </div>
                 </Col>
+                <Col md={3} className={Style.extraOne}></Col>
               </Row>
             </Col>
           </Row>

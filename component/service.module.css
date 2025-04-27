@@ -63,17 +63,32 @@
   color: #0788ff;
 }
 
+.extraOne {
+  display: none;
+}
 
 @media (min-width: 768px) and (max-width: 988px) {
   .cardMain {
     margin-bottom: 20px;
   }
+
+  .extraOne {
+    display: block;
+  }
 }
 
-@media (min-width: 575.98px) and (max-width: 767px) {}
+@media (min-width: 575.98px) and (max-width: 767px) {
+  .extraOne {
+    display: none;
+  }
+}
 
 @media (min-width: 320px) and (max-width: 575px) {
   .cardMain {
     margin-bottom: 20px;
+  }
+
+  .extraOne {
+    display: none;
   }
 }
