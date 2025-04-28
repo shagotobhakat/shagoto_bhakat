@@ -74,7 +74,7 @@ img {
 @media (min-width: 989px) and (max-width: 1199px) {
   .offcanvas {
     background: #06223a;
-    margin-top: 120px;
+    margin-top: 115px;
   }
 
   .overlay::after {
@@ -89,7 +89,7 @@ img {
 @media (min-width: 576px) and (max-width: 988px) {
   .offcanvas {
     background: #06223a;
-    margin-top: 120px;
+    margin-top: 115px;
   }
 
   .overlay::after {
@@ -128,7 +128,7 @@ img {
 
   .offcanvas {
     background: #06223a;
-    margin-top: 82px;
+    margin-top: 85px;
   }
 
   .offcanvas.offcanvas-end {
