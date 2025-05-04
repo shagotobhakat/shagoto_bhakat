@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -8,12 +9,19 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import BackTop from "@/component/backtotop";
+import LoadingScreen from '../component/loader';
 
 export default function RootLayout ( { children } ) {
 
   useEffect( () => {
     Aos.init( { duration: 1000 } );
   } );
+
+  const [ loading, setLoading ] = React.useState( false );
+
+  React.useEffect( () => {
+    setTimeout( () => setLoading( true ), 6000 );
+  }, [] );
 
   return (
 
@@ -27,13 +35,19 @@ export default function RootLayout ( { children } ) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+
       <title>Shagoto Bhakat</title>
+
       <body>
-        { children }
-        <BackTop></BackTop>
+        { loading ? (
+          <React.Fragment>
+            { children }
+            <BackTop></BackTop>
+          </React.Fragment>
+        ) : (
+          <LoadingScreen />
+        ) }
       </body>
-
-
     </html>
 
   );
